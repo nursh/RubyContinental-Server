@@ -18,10 +18,9 @@
   },
   "type": "module",
   "dependencies": {
-    "@types/helmet": "^4.0.0",
     "compression": "^1.8.1",
     "dotenv": "^17.4.2",
-    "drizzle-orm": "^0.45.2",
+    "drizzle-orm": "1.0.0-rc.4",
     "express": "^5.2.1",
     "helmet": "^8.3.0",
     "node": "^26.5.0",
