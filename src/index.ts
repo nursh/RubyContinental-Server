@@ -5,6 +5,7 @@ import helmet from 'helmet'
 import { type Express } from 'express'
 
 import roomRouter from './Rooms/index.ts'
+import env from './env.ts';
 
 
 const app: Express = express()
@@ -14,7 +15,7 @@ app.disable('x-powered-by')
 
 
 app.use('/api/rooms', roomRouter)
-const port = 3000
+const port = env.PORT
 
 app.listen(port, () => {
   console.log(`App is listening on port:${port}`)
